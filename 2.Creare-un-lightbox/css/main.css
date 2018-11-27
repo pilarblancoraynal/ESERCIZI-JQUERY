@@ -1,0 +1,106 @@
+/*******************************************
+ GENERAL 
+******************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+body {
+
+	font-family: 'Josefin Sans', sans-serif;
+	color: #A69C7B;
+	
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+/*******************************************
+HEADER
+******************************************/
+
+
+.main-header {
+	position: relative;
+	background-color: #F3EACC;
+	padding: 5px;
+	text-align: center;
+}
+
+.top-logo {
+	width: 40px;
+}
+
+
+
+/*******************************************
+SEC HEADER
+******************************************/
+
+.secondary-header {
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+h1, h2 {
+	color: #A69C7B;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+
+
+/*******************************************
+SECTION
+******************************************/
+
+.wrapper {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 40px 5% 40px 5%;
+}
+
+
+
+#gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*inserito dopo che è stato menzionato come variabile nel nostro codice jquery*/
+#overlay {
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none; /*perche prima non vogliamo che appaia l'overla, quindi inseriamo none*/
+	text-align: center;
+}
+
+#overlay img {
+	max-width: 800px;
+	margin-top: 10%; /* per centrare l'immagine e sopra anche aggiungo sopra in #overlay { text-align=center }, poi sistemato css passo al punto 3 su jquery*/
+}
+
+
+
+
