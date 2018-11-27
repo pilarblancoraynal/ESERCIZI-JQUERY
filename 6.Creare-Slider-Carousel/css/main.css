@@ -1,0 +1,202 @@
+/*******************************************
+ GENERAL 
+******************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+body {
+
+	font-family: 'Josefin Sans', sans-serif;
+	color: #A69C7B;
+	
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+/*******************************************
+HEADER
+******************************************/
+
+
+.main-header {
+	position: relative;
+	background-color: #F3EACC;
+	padding: 5px;
+	text-align: center;
+}
+
+.top-logo {
+	width: 40px;
+}
+
+
+
+/*******************************************
+SEC HEADER
+******************************************/
+
+.secondary-header {
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+h1, h2 {
+	color: #A69C7B;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+
+
+/*******************************************
+SECTION
+******************************************/
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 40px 5% 40px 5%;
+}
+
+
+
+/*******************************************
+BANNER
+******************************************/
+
+.banner {
+	padding: 160px 20px;
+	text-align: center;
+}
+
+.slide1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/bilancio.jpg) no-repeat center / cover;
+}
+.slide2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/linkedin.jpg) no-repeat center / cover;
+}
+.slide3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/html-css.jpg) no-repeat center / cover;
+}
+
+.banner p {
+	font-size: 1.4em;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+
+
+.corso {
+	vertical-align: middle;
+}
+
+.corso h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.corso h2 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.corso button {
+  padding: 10px 50px 10px 50px;
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  border: none;
+  width: 85%;
+  max-width: 430px;
+  margin-bottom: 10px;
+  background: #6FC17B;
+}
+
+/*******************************************
+SLICK
+******************************************/
+.slick-dots{
+	bottom: 10px;
+}
+
+.slick-dots li button:before {
+	font-size: 15px;
+	color: white;
+}
+
+.slick-dots li.slick-active button:before {
+	color: white;
+}
+
+/*******************************************
+ARROWS
+******************************************/
+.slick-next:before {
+	color: white;
+	font-size: 40px;	
+	
+}
+.slick-prev:before {
+    color: white;
+	font-size: 40px;
+}
+
+.slick-prev
+{
+    left: 25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: 25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
